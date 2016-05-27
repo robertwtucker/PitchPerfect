@@ -35,7 +35,6 @@
                                 <state key="normal" image="stopRecordingButton"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7k8-ay-xyG"/>
-                                    <segue destination="Vv1-Pb-3Yf" kind="show" id="r6T-5a-cyY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -54,16 +53,17 @@
                         <outlet property="recordButton" destination="fgO-Yl-bFp" id="AkD-dl-4cX"/>
                         <outlet property="recordingLabel" destination="TIn-1P-m19" id="LhH-4E-b3q"/>
                         <outlet property="stopRecordingButton" destination="4Lw-AM-z0E" id="skI-hV-oQ2"/>
+                        <segue destination="Vv1-Pb-3Yf" kind="show" identifier="stopRecording" id="WR2-aG-T6n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1214" y="414"/>
+            <point key="canvasLocation" x="1144" y="414"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="EFh-bn-Tmp">
             <objects>
-                <viewController id="Vv1-Pb-3Yf" sceneMemberID="viewController">
+                <viewController id="Vv1-Pb-3Yf" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VS3-i0-M1h"/>
                         <viewControllerLayoutGuide type="bottom" id="mmr-v0-pCp"/>
@@ -76,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hBi-Zp-A0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1951" y="414"/>
+            <point key="canvasLocation" x="1881" y="414"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GNN-87-de6">
