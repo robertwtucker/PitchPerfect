@@ -2,9 +2,6 @@
 //  AppDelegate.swift
 //  PitchPerfect
 //
-//  Created by Robert Tucker on 5/26/16.
-//  Copyright © 2016 Robert Tucker. All rights reserved.
-//
 
 import UIKit
 

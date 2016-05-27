@@ -2,8 +2,6 @@
 //  RecordSoundsViewController.swift
 //  PitchPerfect
 //
-//  Copyright © 2016 Robert Tucker. All rights reserved.
-//
 
 import UIKit
 import AVFoundation
@@ -27,7 +25,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
 
     @IBAction func recordAudio(sender: AnyObject) {
-        print("record button pressed")
+        print("Record button pressed")
         
         let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory,.UserDomainMask, true)[0] as String
         let recordingName = "recordedVoice.wav"
@@ -50,7 +48,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
 
     @IBAction func stopRecording(sender: AnyObject) {
-        print("stop recording button pressed")
+        print("Stop recording button pressed")
         recordingLabel.text = "Tap to Record"
         recordButton.enabled = true
         stopRecordingButton.enabled = false
